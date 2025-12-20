@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Me</title>
+  {% load static %}
+  <style>
+    body {
+      margin: 0;
+      padding: 60px 20px;
+      font-family: Arial, sans-serif;
+      background: url("{% static 'images/Slide1.jpg' %}") no-repeat center center fixed;
+      background-size: cover;
+      color: #f0f4f8;
+    }
+
+    .about-section {
+      max-width: 900px;
+      margin: auto;
+      padding: 40px;
+      background: rgba(0,0,0,0.6);
+      border-radius: 10px;
+      line-height: 1.8;
+      font-size: 1.1em;
+    }
+
+    .about-section h2 {
+      font-size: 2.5em;
+      margin-bottom: 30px;
+      color: #00aaff;
+      text-align: center;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+
+    .about-section p {
+      margin-bottom: 20px;
+    }
+
+    .highlight {
+      color: #00aaff;
+      font-weight: bold;
+    }
+
+    .btn-contact {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 12px 25px;
+      background: #00aaff;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+
+    .btn-contact:hover {
+      background: #0077b5;
+    }
+  </style>
+</head>
+<body>
+  <!-- 🔹 About Section -->
+  <section class="about-section" id="about">
+    <h2>About Me</h2>
+    <p>
+      Hello! I'm <span class="highlight">Yashu</span>, a motivated and detail‑oriented 
+      <span class="highlight">Full‑Stack Web Developer</span> with a strong foundation in 
+      <span class="highlight">HTML, CSS, JavaScript, Python, React, and Django</span>. 
+      I love building interactive and visually appealing web experiences that combine 
+      technical mastery with professional polish.
+    </p>
+    <p>
+      My journey started with curiosity about how websites work, which grew into a 
+      commitment to mastering both front‑end and back‑end development. I’ve deployed 
+      projects using <span class="highlight">GitHub Pages, PythonAnywhere, and Heroku</span>, 
+      and I continuously refine my skills to stay ahead in the fast‑moving tech world.
+    </p>
+    <p>
+      I believe great web design is more than just code — it’s about clarity, creativity, 
+      and connection. Whether I’m troubleshooting bugs, optimizing layouts, or experimenting 
+      with interactive features like progress bars and clickable skill cards, I bring a 
+      persistent and resourceful mindset to every project.
+    </p>
+    <p>
+      My short‑term goal is to launch a professional portfolio that showcases not just 
+      what I can build, but how I think, solve problems, and present ideas. I’m driven 
+      by growth, collaboration, and the challenge of turning ideas into elegant digital solutions.
+    </p>
+    <p>
+      Let’s build something exceptional together.
+    </p>
+    <a href="#contact" class="btn-contact">Contact Me</a>
+  </section>
+</body>
+</html>

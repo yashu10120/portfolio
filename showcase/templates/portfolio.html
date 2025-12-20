@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  {% load static %}
+  <link rel="stylesheet" href="{% static 'pstyle.css' %}">
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+
+  <style>
+    body {
+      background: url("{% static 'image/back.png' %}");
+      scroll-behavior: smooth; /* 🔹 Enables smooth scrolling */
+    }
+    a i {
+      font-size: 30px;
+      margin: 5px;
+      color: #f8f1f1;
+      transition: 0.2s;
+    }
+    a i:hover {
+      color: #0077b5;
+      transform: scale(1.2);
+    }
+    section {
+      min-height: 100vh; /* Each section takes full screen height */
+      padding: 50px;
+    }
+    header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: rgba(255,255,255,0.8);
+      display: flex;
+      justify-content: space-between;
+      padding: 10px 20px;
+      z-index: 1000;
+    }
+    .navbar a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: #efe9e9;
+      font-weight: bold;
+    }
+    .navbar a:hover {
+      color: #0077b5;
+    }
+    #profile-mypi {
+  width: 400px;
+  height: 400px;
+  object-fit: cover;   /* ensures image fills the circle */
+  border-radius: 50%;  /* makes it circular */
+  border: 5px solid #fff;
+   /* optional border */
+}
+.home-right{
+  margin-left: 200px;
+  margin-right: 200px;
+
+}
+
+  </style>
+</head>
+<body>
+  <!-- 🔹 Header / Navbar -->
+  <header class="my"> 
+    <a href="#home" class="logo">Profile</a>
+    <nav class="navbar">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="home" class="home">
+  <!-- Left side: text -->
+  <div class="home-content">
+    <h3>Hello, It's me</h3>
+    <h1>Yashu</h1>
+    <h3>Full-Stack Web Developer</h3><br>
+
+    <!-- Social Links -->
+    <div class="home-sce">
+      <a href="https://github.com/yashu10120"><i class="bx bxl-github"></i></a>
+      <a href="https://www.instagram.com/yxshx_u"><i class="bx bxl-instagram"></i></a>
+      <a href="https://wa.me/qr/GEE74PWFRLYPK1"><i class="bx bxl-whatsapp"></i></a>
+      <a href="https://www.linkedin.com/in/yashwanth-vv"><i class="bx bxl-linkedin"></i></a>
+    </div><br>
+
+    <a href="#about" class="btn-box">More About Me</a>
+  </div>
+
+  <!-- Right side: image -->
+  <div class="home-right">
+<img src="{% static 'image/img.jpeg' %}" id="profile-mypi" alt="Yashu">
+  </div>
+</section>
+
+
+  <!-- 🔹 About Section -->
+  <!-- 🔹 About Section -->
+<section class="about-section" id="about">
+  <h2>About Me</h2>
+  <p>
+    Hello! I'm <span class="highlight">Yashu</span>, a motivated and detail‑oriented 
+    <span class="highlight">Full‑Stack Web Developer</span> with a strong foundation in 
+    <span class="highlight">HTML, CSS, JavaScript, Python, React, and Django</span>. 
+    I love building interactive and visually appealing web experiences that combine 
+    technical mastery with professional polish.
+  </p>
+  <p>
+    My journey started with curiosity about how websites work, which grew into a 
+    commitment to mastering both front‑end and back‑end development. I’ve deployed 
+    projects using <span class="highlight">GitHub Pages, PythonAnywhere, and Heroku</span>, 
+    and I continuously refine my skills to stay ahead in the fast‑moving tech world.
+  </p>
+  <p>
+    I believe great web design is more than just code — it’s about clarity, creativity, 
+    and connection. Whether I’m troubleshooting bugs, optimizing layouts, or experimenting 
+    with interactive features like progress bars and clickable skill cards, I bring a 
+    persistent and resourceful mindset to every project.
+  </p>
+  <p>
+    My short‑term goal is to launch a professional portfolio that showcases not just 
+    what I can build, but how I think, solve problems, and present ideas. I’m driven 
+    by growth, collaboration, and the challenge of turning ideas into elegant digital solutions.
+  </p>
+  <p>
+    Let’s build something exceptional together.
+  </p>
+  <a href="#contact" class="btn-contact">Contact Me</a>
+</section>
+
+  <!-- 🔹 Skills Section -->
+  <!-- 🔹 Skills Section -->
+<section class="skills-section" id="skills">
+  <h2>My Skills</h2>
+  <div class="skills-container">
+    <!-- Technical Skills -->
+    <div class="technical-skills">
+      <h3>Technical Skills</h3>
+      <div class="skill"><label>HTML</label><progress value="90" max="100"></progress></div>
+      <div class="skill"><label>CSS</label><progress value="60" max="100"></progress></div>
+      <div class="skill"><label>JavaScript</label><progress value="85" max="100"></progress></div>
+      <div class="skill"><label>Python</label><progress value="90" max="100"></progress></div>
+      <div class="skill"><label>Django</label><progress value="75" max="100"></progress></div>
+      <div class="skill"><label>MongoDB</label><progress value="75" max="100"></progress></div>
+      <div class="skill"><label>React</label><progress value="70" max="100"></progress></div>
+      <div class="skill"><label>Deployment (GitHub Pages, Heroku, PythonAnywhere)</label><progress value="80" max="100"></progress></div>
+    </div>
+
+    <!-- Professional Skills -->
+    <div class="professional-skills">
+      <h3>Professional Skills</h3>
+      <div class="professional-skills-grid">
+        <div class="circle-skill" style="--value:90">Creativity</div>
+        <div class="circle-skill" style="--value:65">Communication</div>
+        <div class="circle-skill" style="--value:75">Problem Solving</div>
+        <div class="circle-skill" style="--value:85">Teamwork</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <!-- 🔹 Portfolio Section -->
+ <!-- 🔹 Portfolio Section -->
+<section id="projects">
+  <h2>My Work</h2>
+  <div class="projects-container">
+    
+    <!-- Project Card -->
+    <div class="project-card">
+      <img src="{% static 'image/number.jpeg' %}" alt="Project 1">
+      <h3>Project One</h3>
+      <h5>Number Guessing Game</h5> 
+      <p>where you try to guess a random number until you get it right.</p>
+      <a href="https://yashu10120.github.io/Number/" target="_blank" class="btn-view">View Project</a>
+    </div>
+
+    <!-- Project Card -->
+    <div class="project-card">
+      <img src="{% static 'image/currency.png' %}" alt="Project 2">
+      <h3>Project Two</h3>
+      <h5>Currency Converter</h5>
+      <p> A simple tool to convert amounts between USD, INR, and EUR using JavaScript</p>
+      <a href="https://yashu10120.github.io/currency/" target="_blank" class="btn-view">View Project</a>
+    </div>
+
+    <!-- Project Card -->
+    <div class="project-card">
+      <img src="{% static 'image/quiz.png' %}" alt="Project 3">
+      <h3>Project Three</h3>
+      <h5>Quiz</h5>
+      <p> A fun interactive project where users answer multiple‑choice questions with instant feedback.</p>
+      <a href="https://yashu10120.github.io/quiz/" target="_blank" class="btn-view">View Project</a>
+    </div>
+
+  </div>
+</section>
+
+
+  <!-- 🔹 Contact Section -->
+  <section class="contact-section" id="contact">
+  <div class="contact-left">
+    <h2>Contact Me</h2>
+    <p>Let’s collaborate on innovative projects.</p>
+    <p>I’m always open to discussing new ideas, creative solutions, 
+       and opportunities to build impactful web applications. 
+       Feel free to reach out if you’re looking for a dedicated developer 
+       to bring your vision to life.</p>
+
+    <div class="info">
+      <p><i class="bx bx-envelope"></i> yashyashu26132@gmail.com</p>
+      <p><i class="bx bx-phone"></i> +91-8431919639</p>
+    </div>
+
+    <div class="social-icons">
+  <a href="https://github.com/yashu10120"><i class="bx bxl-github"></i></a>
+        <a href="https://www.instagram.com/yxshx_u"><i class="bx bxl-instagram"></i></a>
+        <a href="https://wa.me/qr/GEE74PWFRLYPK1"><i class="bx bxl-whatsapp"></i></a>
+        <a href="https://www.linkedin.com/in/yashwanth-vv"><i class="bx bxl-linkedin"></i></a>
+    </div>
+  </div>
+
+  <div class="contact-right">
+    <form action="{% url 'contact' %}" method="post">
+      {% csrf_token %}
+      <input type="text" name="name" placeholder="Enter Your Name" required />
+      <input type="email" name="email" placeholder="Enter Your Email" required />
+      <input type="text" name="subject" placeholder="Enter Your Subject" required />
+      <textarea name="message" placeholder="Enter Your Message" required></textarea>
+      <button type="submit">Submit</button>
+    </form>
+
+    {% if messages %}
+      {% for message in messages %}
+        <div style="background:#d4edda; color:#155724; padding:10px; 
+                    border-radius:5px; margin-top:15px;">
+          {{ message }}
+        </div>
+      {% endfor %}
+    {% endif %}
+  </div>
+</section>
+
+</body>
+</html>
