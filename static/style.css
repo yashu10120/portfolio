@@ -43,7 +43,7 @@ body{
     width: 100%;
     justify-content: space-between;
     height: 100vh;
-    background: url("{% static 'image/back.png' %}");
+    background: url("{% static 'images/back.png' %}");
     background-size: cover;
     background-position: center;
     display: flex;
