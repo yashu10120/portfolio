@@ -488,4 +488,26 @@ progress::-webkit-progress-value {
     animation: glowPulse 5s ease-in-out infinite;
   }
 }
+/* Mobile adjustments */
+@media (max-width: 576px) {
+  /* Profile image */
+  #profile-mypi,
+  .highlighted-photo {
+    width: 140px !important;   /* force smaller size */
+    height: 140px !important;
+    margin: 0 auto !important;
+  }
+
+  /* Headings */
+  .home-content h1 {
+    font-size: 22px !important;
+  }
+  .home-content h3 {
+    font-size: 16px !important;
+  }
+  .home-content p {
+    font-size: 14px !important;
+  }
+}
+
 
