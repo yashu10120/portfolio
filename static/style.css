@@ -390,12 +390,12 @@ progress::-webkit-progress-value {
   }
 
   /* Home Section */
-  .home {
+  /* .home {
     flex-direction: column;
     text-align: center;
     padding: 60px 5% 20px;
     height: auto;
-  }
+  } */
   .home-content h1 {
     font-size: 22px;       /* reduced main heading */
   }
@@ -490,14 +490,56 @@ progress::-webkit-progress-value {
 }
 /* Mobile adjustments */
 @media (max-width: 576px) {
-  /* Profile image */
-  #profile-mypi,
-  .highlighted-photo {
-    width: 170px !important;   /* force smaller size */
-    height: 170px !important;
-    margin: 0 auto !important;
+  /* Fix home layout */
+  .home {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 60px 5% 30px;
+    height: auto;
   }
 
+  .home-content {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .home-content h1 {
+    font-size: 24px;
+  }
+
+  .home-content h3 {
+    font-size: 18px;
+  }
+
+  .home-content p {
+    font-size: 14px;
+  }
+
+  .home-sce {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+  }
+
+  .home-sce a i {
+    font-size: 24px;
+  }
+
+  .home-right {
+    margin: 0 auto;
+  }
+
+  #profile-mypi,
+  .highlighted-photo {
+    width: 160px !important;
+    height: 160px !important;
+    margin: 0 auto;
+    display: block;
+  }
   /* Headings */
   .home-content h1 {
     font-size: 22px !important;
