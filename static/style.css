@@ -366,8 +366,91 @@ progress::-webkit-progress-value {
   }
 }
 
+/*for mobile  */
 
+/* Extra Mobile Adjustments */
+@media (max-width: 576px) {
+  /* Navbar */
+  .my {
+    padding: 20px 5%;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .logo {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  .navbar a {
+    font-size: 18px;
+    margin: 10px 0;
+    display: block;
+  }
 
+  /* Home Section */
+  .home {
+    flex-direction: column;
+    justify-content: center;
+    padding: 100px 5% 20px;
+    text-align: center;
+  }
+  .home-content h1 {
+    font-size: 32px;
+  }
+  .home-content h3 {
+    font-size: 22px;
+  }
+  .home-content p {
+    font-size: 16px;
+  }
+
+  /* About Section */
+  .about-section {
+    padding: 20px;
+    font-size: 1em;
+  }
+  .about-section h2 {
+    font-size: 1.8em;
+  }
+
+  /* Skills Section */
+  .technical-skills, .professional-skills {
+    width: 100%;
+    min-width: auto;
+  }
+  .professional-skills-grid {
+    grid-template-columns: 1fr; /* stack skills */
+    gap: 20px;
+  }
+  .circle-skill {
+    width: 140px;
+    height: 140px;
+  }
+
+  /* Contact Section */
+  .contact-section {
+    flex-direction: column;
+    padding: 60px 5%;
+  }
+  .contact-left, .contact-right {
+    flex: 1 1 100%;
+    margin-bottom: 20px;
+  }
+
+  /* Projects Section */
+  #projects {
+    padding: 40px 10px;
+  }
+  #projects h2 {
+    font-size: 2em;
+  }
+  .project-card {
+    width: 90%;
+    max-width: 320px;
+  }
+  .project-card img {
+    height: auto;
+  }
+}
 
 
 
