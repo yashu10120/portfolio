@@ -607,7 +607,7 @@ progress::-webkit-progress-value {
   .contact-right input,
   .contact-right textarea {
     font-size: 14px;
-    padding: 10px;
+    padding: 5px;
   }
 
   .contact-right button {
