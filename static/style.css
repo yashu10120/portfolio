@@ -394,7 +394,7 @@ progress::-webkit-progress-value {
   .home {
     flex-direction: column;
     text-align: center;
-    padding: 100px 5% 40px;
+    padding: 80px 5% 40px;
     height: auto;
   }
   .home-content h1 {
