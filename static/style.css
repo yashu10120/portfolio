@@ -451,6 +451,80 @@ progress::-webkit-progress-value {
     height: auto;
   }
 }
+/* Mobile adjustments */
+@media (max-width: 576px) {
+  /* Header & Navbar */
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 8px 12px;
+  }
+  .navbar a {
+    display: block;
+    margin: 8px 0;
+    font-size: 16px;
+  }
+
+  /* Home section */
+  #profile-mypi {
+    width: 220px;
+    height: 220px;
+  }
+  .highlighted-photo {
+    width: 200px;
+    height: 200px;
+  }
+  .home-right {
+    margin: 20px 0; /* reduce side margins */
+  }
+
+  /* Section padding */
+  section {
+    padding: 30px 15px;
+    min-height: auto; /* allow natural height */
+  }
+
+  /* Skills section */
+  .skills-container {
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+  }
+  .technical-skills, .professional-skills {
+    width: 100%;
+    min-width: auto;
+  }
+  .professional-skills-grid {
+    grid-template-columns: 1fr; /* stack skills */
+    gap: 20px;
+  }
+  .circle-skill {
+    width: 100px;
+    height: 100px;
+  }
+  .circle-skill::after {
+    font-size: 12px;
+    bottom: -18px;
+  }
+
+  /* Headings */
+  .skills-section h2,
+  .skills-section h3 {
+    font-size: 1.4em;
+    text-align: center;
+  }
+
+  /* Animations: lighter for mobile */
+  .reveal {
+    transition: opacity 400ms ease, transform 400ms ease;
+  }
+  .photo-reveal {
+    transition: opacity 500ms ease, transform 500ms ease, filter 500ms ease;
+  }
+  .highlighted-photo {
+    animation: glowPulse 4s ease-in-out infinite;
+  }
+}
 
 
 
