@@ -372,64 +372,63 @@ progress::-webkit-progress-value {
   /* Header / Navbar */
   header.my {
     flex-direction: column;
-    align-items: flex-start;
-    padding: 12px 16px;
+    align-items: center;   /* center logo + nav */
+    padding: 8px 12px;
   }
   .logo {
-    font-size: 20px;
-    margin-bottom: 10px;
+    font-size: 18px;       /* smaller logo text */
+    margin-bottom: 8px;
   }
   .navbar {
-    display: flex;
     flex-direction: column;
     width: 100%;
+    align-items: center;
   }
   .navbar a {
-    font-size: 16px;
-    margin: 8px 0;
-    display: block;
+    font-size: 14px;       /* smaller nav links */
+    margin: 6px 0;
   }
 
   /* Home Section */
   .home {
     flex-direction: column;
     text-align: center;
-    padding: 80px 5% 40px;
+    padding: 60px 5% 20px;
     height: auto;
   }
   .home-content h1 {
-    font-size: 28px;
+    font-size: 22px;       /* reduced main heading */
   }
   .home-content h3 {
-    font-size: 20px;
+    font-size: 16px;       /* reduced subheading */
   }
   .home-content p {
-    font-size: 16px;
+    font-size: 14px;       /* reduced paragraph */
   }
   .home-right {
     margin: 20px 0 0;
   }
   #profile-mypi,
   .highlighted-photo {
-    width: 200px;
-    height: 200px;
+    width: 140px;          /* smaller profile image */
+    height: 140px;
     margin: 0 auto;
   }
 
   /* About Section */
   .about-section {
-    padding: 20px;
-    font-size: 1em;
+    padding: 15px;
+    font-size: 0.9em;      /* slightly smaller text */
   }
   .about-section h2 {
-    font-size: 1.6em;
+    font-size: 1.4em;      /* smaller heading */
   }
 
   /* Skills Section */
   .skills-container {
     flex-direction: column;
-    gap: 20px;
-    padding: 20px;
+    gap: 15px;
+    padding: 15px;
   }
   .technical-skills, .professional-skills {
     width: 100%;
@@ -437,32 +436,32 @@ progress::-webkit-progress-value {
   }
   .professional-skills-grid {
     grid-template-columns: 1fr; /* stack skills */
-    gap: 20px;
+    gap: 15px;
   }
   .circle-skill {
-    width: 100px;
-    height: 100px;
+    width: 80px;           /* smaller skill circles */
+    height: 80px;
   }
   .circle-skill::after {
-    font-size: 12px;
-    bottom: -18px;
+    font-size: 11px;
+    bottom: -15px;
   }
   .skills-section h2,
   .skills-section h3 {
-    font-size: 1.4em;
+    font-size: 1.2em;
     text-align: center;
   }
 
   /* Projects Section */
   #projects {
-    padding: 40px 10px;
+    padding: 30px 8px;
   }
   #projects h2 {
-    font-size: 1.8em;
+    font-size: 1.5em;
   }
   .project-card {
-    width: 90%;
-    max-width: 320px;
+    width: 95%;
+    max-width: 280px;
   }
   .project-card img {
     height: auto;
@@ -471,21 +470,22 @@ progress::-webkit-progress-value {
   /* Contact Section */
   .contact-section {
     flex-direction: column;
-    padding: 40px 5%;
+    padding: 30px 5%;
   }
   .contact-left, .contact-right {
     flex: 1 1 100%;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
   }
 
   /* Animations: lighter for mobile */
   .reveal {
-    transition: opacity 400ms ease, transform 400ms ease;
+    transition: opacity 300ms ease, transform 300ms ease;
   }
   .photo-reveal {
-    transition: opacity 500ms ease, transform 500ms ease, filter 500ms ease;
+    transition: opacity 400ms ease, transform 400ms ease, filter 400ms ease;
   }
   .highlighted-photo {
-    animation: glowPulse 4s ease-in-out infinite;
+    animation: glowPulse 5s ease-in-out infinite;
   }
 }
+
