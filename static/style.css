@@ -493,8 +493,8 @@ progress::-webkit-progress-value {
   /* Profile image */
   #profile-mypi,
   .highlighted-photo {
-    width: 140px !important;   /* force smaller size */
-    height: 140px !important;
+    width: 170px !important;   /* force smaller size */
+    height: 170px !important;
     margin: 0 auto !important;
   }
 
