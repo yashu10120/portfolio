@@ -32,13 +32,13 @@ body{
      color:white;
     text-decoration: none;
     font-weight: 500;
-    background-color: rgba(0, 0, 0, 0.7); /* black highlight */
-    border: 1px solid #00aaff;
     margin-left: 35px;
     transition: .3s;
 }
 .navbar a:hover{
-    color: black;
+    background-color: #00aaff;
+    color: #000; 
+    transform: scale(1.05);
 }
 .home{
     position: relative;
