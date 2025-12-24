@@ -359,6 +359,41 @@ progress::-webkit-progress-value {
   background: #0077b5;
 }
 
+.typing-title {
+  font-size: 32px;
+  font-weight: 600;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  white-space: nowrap;
+}
+
+.static-text {
+  color: beige;
+}
+
+.typing-text {
+  color: #00aaff;
+  border-right: 2px solid #00aaff;
+  animation: typing 2.5s steps(10, end) infinite, blink 0.7s step-end infinite;
+  overflow: hidden;
+  white-space: nowrap;
+  display: inline-block;
+  width: 0;
+}
+
+@keyframes typing {
+  0% { width: 0; }
+  50% { width: 9ch; } /* adjust based on word length */
+  100% { width: 0; }
+}
+
+@keyframes blink {
+  0%, 100% { border-color: transparent; }
+  50% { border-color: #00aaff; }
+}
+
+
 /* Responsive */
 @media (max-width: 768px) {
   .projects-container {
