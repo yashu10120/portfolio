@@ -445,13 +445,22 @@
   <div class="projects-container reveal delay-2">
     
     <!-- Project Card -->
-    <div class="project-card reveal delay-3">
-      <img src="{% static 'images/number.jpeg' %}" alt="Project 1">
-      <h3>Project One</h3>
-      <h5>Number Guessing Game</h5> 
-      <p>Where you try to guess a random number until you get it right.</p>
-      <a href="https://yashu10120.github.io/Number/" target="_blank" class="btn-view">View Project</a>
-    </div>
+ <div class="project-card reveal delay-3">
+  <img src="{% static 'images/number.jpeg' %}" alt="Project 1">
+  <h3>Project One</h3>
+  <h5>Number Guessing Game</h5> 
+  <p>Where you try to guess a random number until you get it right.</p>
+
+  <!-- Bar graph on hover -->
+  <div class="project-graph">
+    <div class="bar" style="--bar-width: 80%"><span>Logic</span></div>
+    <div class="bar" style="--bar-width: 60%"><span>UI</span></div>
+    <div class="bar" style="--bar-width: 70%"><span>JavaScript</span></div>
+  </div>
+
+  <a href="https://yashu10120.github.io/Number/" target="_blank" class="btn-view">View Project</a>
+</div>
+
 
     <!-- Project Card -->
     <div class="project-card reveal delay-4">
