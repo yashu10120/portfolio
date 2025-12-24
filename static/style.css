@@ -375,7 +375,7 @@ progress::-webkit-progress-value {
 .typing-text {
   color: #00aaff;
   border-right: 2px solid #00aaff;
-  animation: typing 2.5s steps(10, end) infinite, blink 0.7s step-end infinite;
+  animation: typing 4.5s steps(10, end) infinite, blink 0.20s step-end infinite;
   overflow: hidden;
   white-space: nowrap;
   display: inline-block;
