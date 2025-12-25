@@ -38,7 +38,7 @@ body{
 }
 .navbar a:hover, a.active{
     border-bottom:3px solid #00aaff;
-    color: #000; 
+    color: #00aaff; 
     transform: scale(1.05);
 }
 .home{
