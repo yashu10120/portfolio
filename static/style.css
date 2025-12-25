@@ -38,6 +38,7 @@ body{
 }
 .navbar a:hover, a.active{
     border-bottom:3px solid #00aaff;
+    text-shadow: 0 0 10px #00aaff, 0 0 20px #7f00ff;
     color: #00aaff; 
     transform: scale(1.05);
 }
