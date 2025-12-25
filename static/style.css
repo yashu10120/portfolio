@@ -37,7 +37,7 @@ body{
      border-bottom:3px solid transparent;
 }
 .navbar a:hover, a.active{
-    border-bottom:3px solid blue;
+    border-bottom:3px solid #00aaff;
     color: #000; 
     transform: scale(1.05);
 }
