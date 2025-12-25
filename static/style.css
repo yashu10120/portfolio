@@ -34,8 +34,10 @@ body{
     font-weight: 500;
     margin-left: 35px;
     transition: .3s;
+     border-bottom:3px solid transparent;
 }
-.navbar a:hover{
+.navbar a:hover, a.active{
+    border-bottom:3px solid #000;
     color: #000; 
     transform: scale(1.05);
 }
