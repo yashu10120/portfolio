@@ -46,7 +46,7 @@ body{
   position: absolute;
   left: 0; bottom: -5px;
   width: 0%; height: 2px;
-  background: #00ffff;
+  background: #00aaff;
   transition: width 0.3s ease;
 }
 .navbar a:hover::after { width: 100%; }
